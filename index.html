@@ -74,7 +74,7 @@
             <div class="flex justify-between h-16">
                 <div class="flex flex-col justify-center">
                     <span class="text-xl font-semibold tracking-tight text-[#001540]">DPR Dashboard</span>
-                    <span class="text-xs text-slate-500">Report Update: Till 24th Nov</span>
+                    <span class="text-xs text-slate-500">Report Update: Till 25th Nov</span>
                 </div>
                 <div class="flex items-center space-x-6">
                     <!-- View Toggle Switch -->
@@ -127,17 +127,17 @@
                     <div class="h-8 w-px bg-slate-200"></div>
                     <div class="flex flex-col items-center group cursor-default">
                         <span class="text-slate-500 font-medium mb-1">Days Passed</span>
-                        <span class="text-xl font-bold text-colgate-green">21</span>
+                        <span class="text-xl font-bold text-colgate-green">22</span>
                     </div>
                     <div class="h-8 w-px bg-slate-200"></div>
                     <div class="flex flex-col items-center group cursor-default">
                         <span class="text-slate-500 font-medium mb-1">Remaining</span>
-                        <span class="text-xl font-bold text-colgate-red">5</span>
+                        <span class="text-xl font-bold text-colgate-red">4</span>
                     </div>
                     <div class="h-8 w-px bg-slate-200"></div>
                     <div class="flex flex-col items-center group cursor-default">
                         <span class="text-slate-500 font-medium mb-1">Time Gone</span>
-                        <span class="text-xl font-bold text-colgate-beige-dark">81%</span>
+                        <span class="text-xl font-bold text-colgate-beige-dark">85%</span>
                     </div>
                 </div>
             </div>
@@ -262,38 +262,38 @@
     <script>
         // Data Parsing
         const rawData = [
-            { area: "GP Dhaka North", pTgt: 58.58, pAch: 47.48, pPct: 81, sTgt: 58.58, sAch: 45.28, sPct: 77, tTgt: 1.06, tAch: 0.41, tPct: 38, eTgt: 8057, eAch: 6835, ePct: 85, type: "GT" },
-            { area: "GP Dhaka West", pTgt: 46.52, pAch: 32.35, pPct: 70, sTgt: 46.52, sAch: 28.15, sPct: 61, tTgt: 0.84, tAch: 0.00, tPct: 0, eTgt: 5909, eAch: 3512, ePct: 59, type: "GT" },
-            { area: "GP Mymensingh", pTgt: 76.92, pAch: 32.54, pPct: 42, sTgt: 76.92, sAch: 37.76, sPct: 49, tTgt: 1.39, tAch: 0.48, tPct: 34, eTgt: 12104, eAch: 6428, ePct: 53, type: "GT" },
-            { area: "GP Rangpur", pTgt: 54.21, pAch: 23.91, pPct: 44, sTgt: 54.21, sAch: 29.04, sPct: 54, tTgt: 0.98, tAch: 0.22, tPct: 23, eTgt: 8675, eAch: 5545, ePct: 64, type: "GT" },
-            { area: "GP Bogura", pTgt: 88.18, pAch: 47.71, pPct: 54, sTgt: 88.18, sAch: 58.16, sPct: 66, tTgt: 1.60, tAch: 0.11, tPct: 7, eTgt: 15634, eAch: 11410, ePct: 73, type: "GT" },
-            { area: "GP Sylhet", pTgt: 43.02, pAch: 19.98, pPct: 46, sTgt: 43.02, sAch: 22.71, sPct: 53, tTgt: 0.78, tAch: 0.32, tPct: 41, eTgt: 7218, eAch: 4034, ePct: 56, type: "GT" },
-            { area: "GP North", pTgt: 367.42, pAch: 203.97, pPct: 56, sTgt: 367.42, sAch: 221.11, sPct: 60, tTgt: 6.66, tAch: 1.54, tPct: 23, eTgt: 57597, eAch: 37764, ePct: 66, type: "GT" },
-            { area: "GP Dhaka East", pTgt: 65.81, pAch: 40.96, pPct: 62, sTgt: 58.58, sAch: 40.68, sPct: 69, tTgt: 1.19, tAch: 0.03, tPct: 2, eTgt: 8155, eAch: 5456, ePct: 67, type: "GT" },
-            { area: "GP Chattogram", pTgt: 36.07, pAch: 13.83, pPct: 38, sTgt: 46.52, sAch: 17.31, sPct: 37, tTgt: 0.65, tAch: 0.11, tPct: 17, eTgt: 6579, eAch: 3498, ePct: 53, type: "GT" },
-            { area: "GP Cumilla", pTgt: 50.41, pAch: 25.94, pPct: 51, sTgt: 76.92, sAch: 29.55, sPct: 38, tTgt: 0.91, tAch: 0.00, tPct: 0, eTgt: 9466, eAch: 5436, ePct: 57, type: "GT" },
-            { area: "GP Faridpur", pTgt: 51.35, pAch: 31.75, pPct: 62, sTgt: 88.18, sAch: 38.90, sPct: 44, tTgt: 0.93, tAch: 0.00, tPct: 0, eTgt: 7347, eAch: 5110, ePct: 70, type: "GT" },
-            { area: "GP Barishal", pTgt: 47.18, pAch: 15.43, pPct: 33, sTgt: 43.02, sAch: 20.87, sPct: 49, tTgt: 0.85, tAch: 0.18, tPct: 21, eTgt: 9130, eAch: 4693, ePct: 51, type: "GT" },
-            { area: "GP Jashore", pTgt: 51.77, pAch: 26.41, pPct: 51, sTgt: 54.21, sAch: 33.13, sPct: 61, tTgt: 0.94, tAch: 0.00, tPct: 0, eTgt: 8533, eAch: 4965, ePct: 58, type: "GT" },
-            { area: "GP South", pTgt: 302.59, pAch: 154.33, pPct: 51, sTgt: 367.42, sAch: 180.43, sPct: 49, tTgt: 5.48, tAch: 0.32, tPct: 6, eTgt: 49210, eAch: 29158, ePct: 59, type: "GT" },
-            { area: "GP Total", pTgt: 670.01, pAch: 358.29, pPct: 53, sTgt: 734.85, sAch: 401.53, sPct: 55, tTgt: 12.14, tAch: 1.86, tPct: 15, eTgt: 106807, eAch: 66922, ePct: 63, type: "GT" },
-            { area: "Dhaka East", pTgt: 66.00, pAch: 11.32, pPct: 17, sTgt: 73.00, sAch: 42.74, sPct: 59, tTgt: 4.95, tAch: 0.69, tPct: 14, eTgt: 4000, eAch: 3674, ePct: 92, type: "GT" },
-            { area: "Dhaka North", pTgt: 58.00, pAch: 13.43, pPct: 23, sTgt: 77.62, sAch: 45.34, sPct: 58, tTgt: 4.35, tAch: 0.00, tPct: 0, eTgt: 4400, eAch: 2858, ePct: 65, type: "GT" },
-            { area: "Dhaka South", pTgt: 27.00, pAch: 7.75, pPct: 29, sTgt: 27.00, sAch: 14.04, sPct: 52, tTgt: 2.03, tAch: 0.25, tPct: 12, eTgt: 1900, eAch: 1145, ePct: 60, type: "GT" },
-            { area: "Dhaka West", pTgt: 79.00, pAch: 31.83, pPct: 40, sTgt: 81.67, sAch: 37.32, sPct: 46, tTgt: 5.93, tAch: 0.20, tPct: 3, eTgt: 3640, eAch: 3020, ePct: 83, type: "GT" },
-            { area: "GTM Dhaka", pTgt: 230.00, pAch: 64.34, pPct: 28, sTgt: 259.29, sAch: 139.44, sPct: 54, tTgt: 17.26, tAch: 1.14, tPct: 7, eTgt: 13940, eAch: 10697, ePct: 77, type: "GT" },
-            { area: "CTG North", pTgt: 31.50, pAch: 4.13, pPct: 13, sTgt: 31.50, sAch: 5.77, sPct: 18, tTgt: 4.01, tAch: 0.00, tPct: 0, eTgt: 2737, eAch: 1544, ePct: 56, type: "GT" },
-            { area: "CTG South", pTgt: 38.50, pAch: 11.72, pPct: 30, sTgt: 38.50, sAch: 22.40, sPct: 58, tTgt: 4.61, tAch: 0.50, tPct: 11, eTgt: 2590, eAch: 2172, ePct: 84, type: "GT" },
-            { area: "GTM CTG", pTgt: 70.00, pAch: 15.85, pPct: 23, sTgt: 70.00, sAch: 28.17, sPct: 40, tTgt: 8.62, tAch: 0.50, tPct: 6, eTgt: 5327, eAch: 3716, ePct: 70, type: "GT" },
-            { area: "Total GTM", pTgt: 300.00, pAch: 80.18, pPct: 27, sTgt: 329.29, sAch: 167.61, sPct: 51, tTgt: 25.88, tAch: 1.64, tPct: 6, eTgt: 19267, eAch: 14413, ePct: 75, type: "GT" },
-            { area: "Retail Total", pTgt: 970.01, pAch: 438.48, pPct: 45, sTgt: 1064.14, sAch: 569.14, sPct: 53, tTgt: 38.02, tAch: 3.50, tPct: 9, eTgt: 126074, eAch: 81335, ePct: 65, type: "GT" },
+            { area: "GP Dhaka North", pTgt: 58.58, pAch: 48.46, pPct: 83, sTgt: 58.58, sAch: 47.60, sPct: 81, tTgt: 1.06, tAch: 0.41, tPct: 38, eTgt: 8057, eAch: 7055, ePct: 88, type: "GT" },
+            { area: "GP Dhaka West", pTgt: 46.52, pAch: 32.35, pPct: 70, sTgt: 46.52, sAch: 30.28, sPct: 65, tTgt: 0.84, tAch: 0.00, tPct: 0, eTgt: 5909, eAch: 3760, ePct: 64, type: "GT" },
+            { area: "GP Mymensingh", pTgt: 76.92, pAch: 33.45, pPct: 43, sTgt: 76.92, sAch: 39.56, sPct: 51, tTgt: 1.39, tAch: 0.48, tPct: 34, eTgt: 12104, eAch: 6694, ePct: 55, type: "GT" },
+            { area: "GP Rangpur", pTgt: 54.21, pAch: 23.91, pPct: 44, sTgt: 54.21, sAch: 30.09, sPct: 56, tTgt: 0.98, tAch: 0.22, tPct: 23, eTgt: 8675, eAch: 5721, ePct: 66, type: "GT" },
+            { area: "GP Bogura", pTgt: 88.18, pAch: 58.93, pPct: 67, sTgt: 88.18, sAch: 60.71, sPct: 69, tTgt: 1.60, tAch: 0.11, tPct: 7, eTgt: 15634, eAch: 11848, ePct: 76, type: "GT" },
+            { area: "GP Sylhet", pTgt: 43.02, pAch: 23.88, pPct: 56, sTgt: 43.02, sAch: 23.96, sPct: 56, tTgt: 0.78, tAch: 0.43, tPct: 56, eTgt: 7218, eAch: 4203, ePct: 58, type: "GT" },
+            { area: "GP North", pTgt: 367.42, pAch: 220.99, pPct: 60, sTgt: 367.42, sAch: 232.20, sPct: 63, tTgt: 6.66, tAch: 1.65, tPct: 25, eTgt: 57597, eAch: 39281, ePct: 68, type: "GT" },
+            { area: "GP Dhaka East", pTgt: 65.81, pAch: 42.95, pPct: 65, sTgt: 58.58, sAch: 42.87, sPct: 73, tTgt: 1.19, tAch: 0.09, tPct: 7, eTgt: 8155, eAch: 5714, ePct: 70, type: "GT" },
+            { area: "GP Chattogram", pTgt: 36.07, pAch: 19.34, pPct: 54, sTgt: 46.52, sAch: 18.61, sPct: 40, tTgt: 0.65, tAch: 0.11, tPct: 17, eTgt: 6579, eAch: 3679, ePct: 56, type: "GT" },
+            { area: "GP Cumilla", pTgt: 50.41, pAch: 28.62, pPct: 57, sTgt: 76.92, sAch: 31.11, sPct: 40, tTgt: 0.91, tAch: 0.00, tPct: 0, eTgt: 9466, eAch: 5659, ePct: 60, type: "GT" },
+            { area: "GP Faridpur", pTgt: 51.35, pAch: 31.75, pPct: 62, sTgt: 88.18, sAch: 40.70, sPct: 46, tTgt: 0.93, tAch: 0.00, tPct: 0, eTgt: 7347, eAch: 5310, ePct: 72, type: "GT" },
+            { area: "GP Barishal", pTgt: 47.18, pAch: 15.43, pPct: 33, sTgt: 43.02, sAch: 22.28, sPct: 52, tTgt: 0.85, tAch: 0.18, tPct: 21, eTgt: 9130, eAch: 4922, ePct: 54, type: "GT" },
+            { area: "GP Jashore", pTgt: 51.77, pAch: 26.41, pPct: 51, sTgt: 54.21, sAch: 33.91, sPct: 63, tTgt: 0.94, tAch: 0.00, tPct: 0, eTgt: 8533, eAch: 5096, ePct: 60, type: "GT" },
+            { area: "GP South", pTgt: 302.59, pAch: 164.50, pPct: 54, sTgt: 367.42, sAch: 189.49, sPct: 52, tTgt: 5.48, tAch: 0.38, tPct: 7, eTgt: 49210, eAch: 30380, ePct: 62, type: "GT" },
+            { area: "GP Total", pTgt: 670.01, pAch: 385.49, pPct: 58, sTgt: 734.85, sAch: 421.69, sPct: 57, tTgt: 12.14, tAch: 2.03, tPct: 17, eTgt: 106807, eAch: 69661, ePct: 65, type: "GT" },
+            { area: "Dhaka East", pTgt: 66.00, pAch: 11.32, pPct: 17, sTgt: 73.00, sAch: 43.85, sPct: 59, tTgt: 4.95, tAch: 0.69, tPct: 14, eTgt: 4000, eAch: 3674, ePct: 92, type: "GT" },
+            { area: "Dhaka North", pTgt: 58.00, pAch: 13.43, pPct: 23, sTgt: 77.62, sAch: 47.58, sPct: 58, tTgt: 4.35, tAch: 0.00, tPct: 0, eTgt: 4400, eAch: 2858, ePct: 65, type: "GT" },
+            { area: "Dhaka South", pTgt: 27.00, pAch: 7.75, pPct: 29, sTgt: 27.00, sAch: 14.80, sPct: 52, tTgt: 2.03, tAch: 0.25, tPct: 12, eTgt: 1900, eAch: 1145, ePct: 60, type: "GT" },
+            { area: "Dhaka West", pTgt: 79.00, pAch: 31.83, pPct: 40, sTgt: 81.67, sAch: 39.86, sPct: 46, tTgt: 5.93, tAch: 0.20, tPct: 3, eTgt: 3640, eAch: 3020, ePct: 83, type: "GT" },
+            { area: "GTM Dhaka", pTgt: 230.00, pAch: 64.34, pPct: 28, sTgt: 259.29, sAch: 146.09, sPct: 54, tTgt: 17.26, tAch: 1.14, tPct: 7, eTgt: 13940, eAch: 10697, ePct: 77, type: "GT" },
+            { area: "CTG North", pTgt: 31.50, pAch: 6.50, pPct: 21, sTgt: 31.50, sAch: 6.69, sPct: 18, tTgt: 4.01, tAch: 0.00, tPct: 0, eTgt: 2737, eAch: 1544, ePct: 56, type: "GT" },
+            { area: "CTG South", pTgt: 38.50, pAch: 21.62, pPct: 56, sTgt: 38.50, sAch: 23.46, sPct: 58, tTgt: 4.61, tAch: 0.50, tPct: 11, eTgt: 2590, eAch: 2172, ePct: 84, type: "GT" },
+            { area: "GTM CTG", pTgt: 70.00, pAch: 28.12, pPct: 40, sTgt: 70.00, sAch: 30.15, sPct: 40, tTgt: 8.62, tAch: 0.50, tPct: 6, eTgt: 5327, eAch: 3716, ePct: 70, type: "GT" },
+            { area: "Total GTM", pTgt: 300.00, pAch: 92.46, pPct: 31, sTgt: 329.29, sAch: 176.24, sPct: 51, tTgt: 25.88, tAch: 1.64, tPct: 6, eTgt: 19267, eAch: 14413, ePct: 75, type: "GT" },
+            { area: "Retail Total", pTgt: 970.01, pAch: 477.95, pPct: 49, sTgt: 1064.14, sAch: 597.93, sPct: 55, tTgt: 38.02, tAch: 3.67, tPct: 10, eTgt: 126074, eAch: 84074, ePct: 67, type: "GT" },
             
             { area: "Key Accounts", pTgt: 180.30, pAch: 93.72, pPct: 52, sTgt: 180.30, sAch: 93.72, sPct: 52, tTgt: 21.70, tAch: 16.80, tPct: 77, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
-            { area: "E-Commerce", pTgt: 17.80, pAch: 6.06, pPct: 34, sTgt: 17.80, sAch: 6.06, sPct: 34, tTgt: 2.64, tAch: 0.21, tPct: 8, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
+            { area: "E-Commerce", pTgt: 17.80, pAch: 6.05, pPct: 34, sTgt: 17.80, sAch: 6.05, sPct: 34, tTgt: 2.64, tAch: 0.21, tPct: 8, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
             { area: "Institution", pTgt: 32.00, pAch: 13.43, pPct: 42, sTgt: 32.00, sAch: 13.43, sPct: 42, tTgt: 0.00, tAch: 0.05, tPct: 0, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
-            { area: "MT+E Com+Inst", pTgt: 230.10, pAch: 113.21, pPct: 49, sTgt: 230.10, sAch: 113.21, sPct: 49, tTgt: 24.34, tAch: 17.07, tPct: 70, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
+            { area: "MT+E Com+Inst", pTgt: 230.10, pAch: 113.20, pPct: 49, sTgt: 230.10, sAch: 113.20, sPct: 49, tTgt: 24.34, tAch: 17.07, tPct: 70, eTgt: 0, eAch: 0, ePct: 0, type: "MT" },
             
-            { area: "TOTAL", pTgt: 1200.12, pAch: 551.69, pPct: 46, sTgt: 1294.24, sAch: 682.36, sPct: 53, tTgt: 62.36, tAch: 20.57, tPct: 33, eTgt: 126074, eAch: 81335, ePct: 65, type: "ALL" }
+            { area: "TOTAL", pTgt: 1200.12, pAch: 591.14, pPct: 49, sTgt: 1294.24, sAch: 711.13, sPct: 54, tTgt: 62.36, tAch: 20.74, tPct: 33, eTgt: 126074, eAch: 84074, ePct: 67, type: "ALL" }
         ];
 
         // --- View Filtering ---
@@ -359,8 +359,8 @@
         function renderTable(data) {
             tableBody.innerHTML = '';
             
-            const daysPassed = 21;
-            const remainingDays = 5;
+            const daysPassed = 22;
+            const remainingDays = 4;
             const factor = 1.5;
 
             data.forEach(row => {
