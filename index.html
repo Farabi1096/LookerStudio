@@ -34,6 +34,8 @@
         .text-colgate-red { color: #E31837; }
         .bg-colgate-red-light { background-color: #FFF0F2; }
         .border-colgate-red { border-color: #FFCDD2; }
+        /* Added Solid Colgate Red Background */
+        .bg-colgate-red { background-color: #E31837; }
 
         /* Solid Header Backgrounds */
         .header-bg-blue { background-color: #E1F0FA; }    
@@ -60,11 +62,11 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Navbar -->
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-30 overflow-hidden">
+    <!-- Navbar (Updated to Colgate Red) -->
+    <nav class="bg-colgate-red border-b border-red-700 sticky top-0 z-30 overflow-hidden shadow-md">
         
-        <!-- Big Sparkle Background -->
-        <div class="absolute top-[-50%] right-[-5%] w-[500px] h-[500px] pointer-events-none z-0 opacity-10 text-orange-400">
+        <!-- Big Sparkle Background (Adjusted for Red BG) -->
+        <div class="absolute top-[-50%] right-[-5%] w-[500px] h-[500px] pointer-events-none z-0 opacity-10 text-white">
             <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.5" class="w-full h-full animate-spin-slow">
                 <line x1="50" y1="50" x2="50" y2="0" /><line x1="50" y1="50" x2="60" y2="0" /><line x1="50" y1="50" x2="70" y2="5" /><line x1="50" y1="50" x2="80" y2="10" /><line x1="50" y1="50" x2="90" y2="20" /><line x1="50" y1="50" x2="100" y2="30" /><line x1="50" y1="50" x2="100" y2="50" /><line x1="50" y1="50" x2="100" y2="70" /><line x1="50" y1="50" x2="90" y2="80" /><line x1="50" y1="50" x2="80" y2="90" /><line x1="50" y1="50" x2="70" y2="95" /><line x1="50" y1="50" x2="60" y2="100" /><line x1="50" y1="50" x2="50" y2="100" /><line x1="50" y1="50" x2="40" y2="100" /><line x1="50" y1="50" x2="30" y2="95" /><line x1="50" y1="50" x2="20" y2="90" /><line x1="50" y1="50" x2="10" y2="80" /><line x1="50" y1="50" x2="0" y2="70" /><line x1="50" y1="50" x2="0" y2="50" /><line x1="50" y1="50" x2="0" y2="30" /><line x1="50" y1="50" x2="10" y2="20" /><line x1="50" y1="50" x2="20" y2="10" /><line x1="50" y1="50" x2="30" y2="5" /><line x1="50" y1="50" x2="40" y2="0" />
             </svg>
@@ -73,25 +75,26 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex justify-between h-16">
                 <div class="flex flex-col justify-center">
-                    <span class="text-xl font-semibold tracking-tight text-[#001540]">DPR Dashboard</span>
-                    <span class="text-xs text-slate-500">Report Update: Till 25th Nov</span>
+                    <!-- Text colors updated to White -->
+                    <span class="text-xl font-semibold tracking-tight text-white">DPR Dashboard</span>
+                    <span class="text-xs text-white/80">Report Update: Till 25th Nov</span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <!-- View Toggle Switch -->
-                    <div class="bg-slate-100 p-1 rounded-lg flex items-center shadow-inner">
+                    <!-- View Toggle Switch (Container bg updated for contrast) -->
+                    <div class="bg-red-800/30 p-1 rounded-lg flex items-center shadow-inner border border-red-700/50">
                         <button id="btnGT" onclick="toggleView('GT')" class="px-4 py-1.5 rounded-md text-sm font-medium transition-all shadow-sm bg-white text-colgate-navy border border-slate-200">
                             GT Business
                         </button>
-                        <button id="btnMT" onclick="toggleView('MT')" class="px-4 py-1.5 rounded-md text-sm font-medium transition-all text-slate-500 hover:text-colgate-navy">
+                        <button id="btnMT" onclick="toggleView('MT')" class="px-4 py-1.5 rounded-md text-sm font-medium transition-all text-white/70 hover:text-white hover:bg-white/10">
                             MT & Others
                         </button>
                     </div>
 
                     <div class="relative group">
-                        <div class="absolute inset-0 bg-white/50 backdrop-blur-sm rounded-lg -z-10"></div>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-lg -z-10"></div>
                         <input type="text" id="searchInput" placeholder="Search Area..." 
-                            class="w-64 pl-10 pr-4 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0072CE] focus:border-transparent transition-all bg-white/80">
-                        <svg class="w-4 h-4 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            class="w-64 pl-10 pr-4 py-2 border border-white/20 rounded-lg text-sm text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all bg-white/10">
+                        <svg class="w-4 h-4 text-white/70 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
                 </div>
             </div>
@@ -144,52 +147,92 @@
 
             <!-- 2. Total Achievements Overview (One Line, Separate Cards) -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <!-- PRI ACH (Blue Sparkle) -->
+                <!-- PRI KPI -->
                 <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center group hover:border-blue-300 transition-all relative overflow-hidden">
                     <!-- Sparkle -->
                     <svg class="absolute -top-2 -right-2 w-16 h-16 text-blue-100 opacity-50 group-hover:scale-110 transition-transform pointer-events-none" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="100" y1="0" x2="0" y2="100" /><line x1="100" y1="0" x2="20" y2="80" /><line x1="100" y1="0" x2="40" y2="60" /><line x1="100" y1="0" x2="0" y2="50" /><line x1="100" y1="0" x2="0" y2="20" />
                     </svg>
                     
-                    <div class="bg-blue-50 p-2 rounded-full mb-2 relative z-10"><span class="text-colgate-blue text-xs font-bold">PRI</span></div>
-                    <p class="text-xs text-slate-500 font-bold uppercase tracking-wide mb-1 relative z-10">Total Achievement</p>
-                    <p class="text-2xl font-bold text-colgate-blue relative z-10" id="totalPriAch">0</p>
+                    <div class="bg-blue-50 p-2 rounded-full mb-3 relative z-10"><span class="text-colgate-blue text-xs font-bold">PRI</span></div>
+                    
+                    <div class="relative z-10 w-full flex flex-col gap-2">
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Target</p>
+                            <p class="text-lg font-bold text-slate-600" id="totalPriTgt">0</p>
+                        </div>
+                        <div class="h-px bg-slate-100 w-1/2 mx-auto"></div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Achievement</p>
+                            <p class="text-2xl font-bold text-colgate-blue" id="totalPriAch">0</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- STT ACH (Green Arcs) -->
+                <!-- STT KPI -->
                 <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center group hover:border-green-300 transition-all relative overflow-hidden">
                     <!-- Sparkle -->
                     <svg class="absolute -top-4 -left-4 w-20 h-20 text-emerald-100 opacity-50 group-hover:scale-110 transition-transform pointer-events-none" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="0" cy="0" r="20" /><circle cx="0" cy="0" r="40" /><circle cx="0" cy="0" r="60" /><circle cx="0" cy="0" r="80" />
                     </svg>
 
-                    <div class="bg-emerald-50 p-2 rounded-full mb-2 relative z-10"><span class="text-colgate-green text-xs font-bold">STT</span></div>
-                    <p class="text-xs text-slate-500 font-bold uppercase tracking-wide mb-1 relative z-10">Total Achievement</p>
-                    <p class="text-2xl font-bold text-colgate-green relative z-10" id="totalSttAch">0</p>
+                    <div class="bg-emerald-50 p-2 rounded-full mb-3 relative z-10"><span class="text-colgate-green text-xs font-bold">STT</span></div>
+                    
+                    <div class="relative z-10 w-full flex flex-col gap-2">
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Target</p>
+                            <p class="text-lg font-bold text-slate-600" id="totalSttTgt">0</p>
+                        </div>
+                        <div class="h-px bg-slate-100 w-1/2 mx-auto"></div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Achievement</p>
+                            <p class="text-2xl font-bold text-colgate-green" id="totalSttAch">0</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- TBR ACH (Navy Star) -->
+                <!-- TBR KPI -->
                 <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center group hover:border-slate-400 transition-all relative overflow-hidden">
                     <!-- Sparkle -->
                     <svg class="absolute -bottom-2 -right-2 w-14 h-14 text-slate-200 opacity-50 group-hover:scale-110 transition-transform pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
                     </svg>
 
-                    <div class="bg-slate-100 p-2 rounded-full mb-2 relative z-10"><span class="text-colgate-navy text-xs font-bold">TBR</span></div>
-                    <p class="text-xs text-slate-500 font-bold uppercase tracking-wide mb-1 relative z-10">Total Achievement</p>
-                    <p class="text-2xl font-bold text-colgate-navy relative z-10" id="totalTbrAch">0</p>
+                    <div class="bg-slate-100 p-2 rounded-full mb-3 relative z-10"><span class="text-colgate-navy text-xs font-bold">TBR</span></div>
+                    
+                    <div class="relative z-10 w-full flex flex-col gap-2">
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Target</p>
+                            <p class="text-lg font-bold text-slate-600" id="totalTbrTgt">0</p>
+                        </div>
+                        <div class="h-px bg-slate-100 w-1/2 mx-auto"></div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Achievement</p>
+                            <p class="text-2xl font-bold text-colgate-navy" id="totalTbrAch">0</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- ERC ACH (Orange Sunburst) -->
+                <!-- ERC KPI -->
                 <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center group hover:border-orange-300 transition-all relative overflow-hidden">
                     <!-- Sparkle -->
                     <svg class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-24 h-24 text-orange-100 opacity-50 group-hover:scale-110 transition-transform pointer-events-none" viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="50" y1="0" x2="50" y2="50" /><line x1="50" y1="0" x2="30" y2="40" /><line x1="50" y1="0" x2="70" y2="40" /><line x1="50" y1="0" x2="10" y2="20" /><line x1="50" y1="0" x2="90" y2="20" />
                     </svg>
 
-                    <div class="bg-orange-50 p-2 rounded-full mb-2 relative z-10"><span class="text-colgate-beige-dark text-xs font-bold">ERC</span></div>
-                    <p class="text-xs text-slate-500 font-bold uppercase tracking-wide mb-1 relative z-10">Total Achievement</p>
-                    <p class="text-2xl font-bold text-colgate-beige-dark relative z-10" id="totalErcAch">0</p>
+                    <div class="bg-orange-50 p-2 rounded-full mb-3 relative z-10"><span class="text-colgate-beige-dark text-xs font-bold">ERC</span></div>
+                    
+                    <div class="relative z-10 w-full flex flex-col gap-2">
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Target</p>
+                            <p class="text-lg font-bold text-slate-600" id="totalErcTgt">0</p>
+                        </div>
+                        <div class="h-px bg-slate-100 w-1/2 mx-auto"></div>
+                        <div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Achievement</p>
+                            <p class="text-2xl font-bold text-colgate-beige-dark" id="totalErcAch">0</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,12 +348,13 @@
             const btnGT = document.getElementById('btnGT');
             const btnMT = document.getElementById('btnMT');
 
+            // Updated styling logic for Red Header
             if (view === 'GT') {
                 btnGT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all shadow-sm bg-white text-colgate-navy border border-slate-200";
-                btnMT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all text-slate-500 hover:text-colgate-navy";
+                btnMT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all text-white/70 hover:text-white hover:bg-white/10";
             } else {
                 btnMT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all shadow-sm bg-white text-colgate-navy border border-slate-200";
-                btnGT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all text-slate-500 hover:text-colgate-navy";
+                btnGT.className = "px-4 py-1.5 rounded-md text-sm font-medium transition-all text-white/70 hover:text-white hover:bg-white/10";
             }
 
             filterAndRender();
@@ -422,9 +466,16 @@
         // Populate Total Achievements Stats
         const totalRow = rawData.find(row => row.area === 'TOTAL');
         if (totalRow) {
+            document.getElementById('totalPriTgt').textContent = formatFraction(totalRow.pTgt);
             document.getElementById('totalPriAch').textContent = formatFraction(totalRow.pAch);
+            
+            document.getElementById('totalSttTgt').textContent = formatFraction(totalRow.sTgt);
             document.getElementById('totalSttAch').textContent = formatFraction(totalRow.sAch);
+            
+            document.getElementById('totalTbrTgt').textContent = formatFraction(totalRow.tTgt);
             document.getElementById('totalTbrAch').textContent = formatFraction(totalRow.tAch);
+            
+            document.getElementById('totalErcTgt').textContent = formatNum(totalRow.eTgt);
             document.getElementById('totalErcAch').textContent = formatNum(totalRow.eAch);
         }
 
